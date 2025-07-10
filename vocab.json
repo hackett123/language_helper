@@ -208,5 +208,355 @@
     "simplified": "可乐",
     "pinyin": "kělè",
     "english": "cola"
+  },
+  {
+    "simplified": "一",
+    "pinyin": "yī",
+    "english": "one; 1"
+  },
+  {
+    "simplified": "两",
+    "pinyin": "liǎng",
+    "english": "(before measure words) two; 2"
+  },
+  {
+    "simplified": "三",
+    "pinyin": "sān",
+    "english": "three; 3"
+  },
+  {
+    "simplified": "四",
+    "pinyin": "sì",
+    "english": "four; 4"
+  },
+  {
+    "simplified": "五",
+    "pinyin": "wǔ",
+    "english": "five; 5"
+  },
+  {
+    "simplified": "块",
+    "pinyin": "kuài",
+    "english": "colloquial word for yuan"
+  },
+  {
+    "simplified": "多少",
+    "pinyin": "duōshao",
+    "english": "how much; how many"
+  },
+  {
+    "simplified": "钱",
+    "pinyin": "qián",
+    "english": "money"
+  },
+  {
+    "simplified": "六",
+    "pinyin": "liù",
+    "english": "six; 6"
+  },
+  {
+    "simplified": "七",
+    "pinyin": "qī",
+    "english": "seven; 7"
+  },
+  {
+    "simplified": "八",
+    "pinyin": "bā",
+    "english": "eight; 8"
+  },
+  {
+    "simplified": "九",
+    "pinyin": "jiǔ",
+    "english": "nine; 9"
+  },
+  {
+    "simplified": "十",
+    "pinyin": "shí",
+    "english": "ten; 10"
+  },
+  {
+    "simplified": "个",
+    "pinyin": "gè",
+    "english": "measure word for people or objects in general"
+  },
+  {
+    "simplified": "瓶",
+    "pinyin": "píng",
+    "english": "(measure word for liquid) bottle"
+  },
+  {
+    "simplified": "杯",
+    "pinyin": "bēi",
+    "english": "(measure word for liquid) glass; cup"
+  },
+  {
+    "simplified": "二",
+    "pinyin": "èr",
+    "english": "two; 2"
+  },
+  {
+    "simplified": "百",
+    "pinyin": "bǎi",
+    "english": "hundred"
+  },
+  {
+    "simplified": "的",
+    "pinyin": "de",
+    "english": "~'s (possessive particle)"
+  },
+  {
+    "simplified": "爱",
+    "pinyin": "ài",
+    "english": "to love"
+  },
+  {
+    "simplified": "爸爸",
+    "pinyin": "bàba",
+    "english": "father; dad"
+  },
+  {
+    "simplified": "妈妈",
+    "pinyin": "māma",
+    "english": "mother; mom"
+  },
+  {
+    "simplified": "爷爷",
+    "pinyin": "yéye",
+    "english": "(paternal) grandfather; grandpa"
+  },
+  {
+    "simplified": "奶奶",
+    "pinyin": "nǎinai",
+    "english": "(paternal) grandmother; grandma"
+  },
+  {
+    "simplified": "有",
+    "pinyin": "yǒu",
+    "english": "to have; there is; there are"
+  },
+  {
+    "simplified": "没有",
+    "pinyin": "méiyǒu",
+    "english": "to not have"
+  },
+  {
+    "simplified": "哥哥",
+    "pinyin": "gēge",
+    "english": "older brother"
+  },
+  {
+    "simplified": "姐姐",
+    "pinyin": "jiějie",
+    "english": "older sister"
+  },
+  {
+    "simplified": "弟弟",
+    "pinyin": "dìdi",
+    "english": "younger brother"
+  },
+  {
+    "simplified": "妹妹",
+    "pinyin": "mèimei",
+    "english": "younger sister"
+  },
+  {
+    "simplified": "几",
+    "pinyin": "jǐ",
+    "english": "how much; how many"
+  },
+  {
+    "simplified": "口",
+    "pinyin": "kǒu",
+    "english": "measure word for family members"
+  },
+  {
+    "simplified": "家",
+    "pinyin": "jiā",
+    "english": "home; family"
+  },
+  {
+    "simplified": "这",
+    "pinyin": "zhè",
+    "english": "this"
+  },
+  {
+    "simplified": "那",
+    "pinyin": "nà",
+    "english": "that"
+  },
+  {
+    "simplified": "猫",
+    "pinyin": "māo",
+    "english": "cat"
+  },
+  {
+    "simplified": "狗",
+    "pinyin": "gǒu",
+    "english": "dog"
+  },
+  {
+    "simplified": "星期一",
+    "pinyin": "xīnqīyī",
+    "english": "Monday"
+  },
+  {
+    "simplified": "星期二",
+    "pinyin": "xīnqī’èr",
+    "english": "Tuesday"
+  },
+  {
+    "simplified": "星期三",
+    "pinyin": "xīnqīsān",
+    "english": "Wednesday"
+  },
+  {
+    "simplified": "星期四",
+    "pinyin": "xīngqīsì",
+    "english": "Thursday"
+  },
+  {
+    "simplified": "今天",
+    "pinyin": "jīntiān",
+    "english": "today"
+  },
+  {
+    "simplified": "明天",
+    "pinyin": "míngtiān",
+    "english": "tomorrow"
+  },
+  {
+    "simplified": "昨天",
+    "pinyin": "zuótiān",
+    "english": "yesterday"
+  },
+  {
+    "simplified": "星期",
+    "pinyin": "xīnqī",
+    "english": "week; day of the week"
+  },
+  {
+    "simplified": "星期五",
+    "pinyin": "xīnqīwǔ",
+    "english": "Friday"
+  },
+  {
+    "simplified": "星期六",
+    "pinyin": "xīqīliù",
+    "english": "Saturday"
+  },
+  {
+    "simplified": "星期天",
+    "pinyin": "xīnqītiān",
+    "english": "Sunday"
+  },
+  {
+    "simplified": "月",
+    "pinyin": "yuè",
+    "english": "month"
+  },
+  {
+    "simplified": "号",
+    "pinyin": "hào",
+    "english": "day of the month"
+  },
+  {
+    "simplified": "年",
+    "pinyin": "nián",
+    "english": "year"
+  },
+  {
+    "simplified": "生日",
+    "pinyin": "shēngrì",
+    "english": "birthday"
+  },
+  {
+    "simplified": "零",
+    "pinyin": "líng",
+    "english": "zero; 0"
+  },
+  {
+    "simplified": "去",
+    "pinyin": "qù",
+    "english": "to go"
+  },
+  {
+    "simplified": "饭馆",
+    "pinyin": "fànguǎn",
+    "english": "restaurant"
+  },
+  {
+    "simplified": "学校",
+    "pinyin": "xuéxiào",
+    "english": "school"
+  },
+  {
+    "simplified": "超市",
+    "pinyin": "chāoshì",
+    "english": "supermarket"
+  },
+  {
+    "simplified": "公司",
+    "pinyin": "gōngsī",
+    "english": "company"
+  },
+  {
+    "simplified": "哪里",
+    "pinyin": "nǎlǐ",
+    "english": "where"
+  },
+  {
+    "simplified": "在",
+    "pinyin": "zài",
+    "english": "(located) at; (to be) in; on"
+  },
+  {
+    "simplified": "商店",
+    "pinyin": "shǎngdiàn",
+    "english": "shop; store"
+  },
+  {
+    "simplified": "机场",
+    "pinyin": "jīchǎng",
+    "english": "airport"
+  },
+  {
+    "simplified": "医院",
+    "pinyin": "yīyuàn",
+    "english": "hospital"
+  },
+  {
+    "simplified": "前边",
+    "pinyin": "qiánbiān",
+    "english": "front; front side"
+  },
+  {
+    "simplified": "后边",
+    "pinyin": "hòubiān",
+    "english": "behind; back side"
+  },
+  {
+    "simplified": "公园",
+    "pinyin": "gōngyuán",
+    "english": "park"
+  },
+  {
+    "simplified": "酒店",
+    "pinyin": "jiǔdiàn",
+    "english": "hotel"
+  },
+  {
+    "simplified": "附近",
+    "pinyin": "fùjìn",
+    "english": "nearby; near; close to"
+  },
+  {
+    "simplified": "厕所",
+    "pinyin": "cèsuǒ",
+    "english": "restroom; toilet; bathroom"
+  },
+  {
+    "simplified": "银行",
+    "pinyin": "yínháng",
+    "english": "bank"
   }
 ]
