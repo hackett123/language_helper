@@ -4,10 +4,10 @@ A terminal-based flashcard and word lookup system for learning Mandarin, designe
 
 ## Features
 
-- 🔄 `load`: Merge new vocabulary from a JSON file into your saved vocab.
-- 🔍 `search`: Look up words by **pinyin substring** (tone-insensitive).
-- 🧠 `study`: Flashcard quiz mode (randomized, shows either English or Chinese first).
-- ➕ `add`: Add new words manually from the command line.
+- `load`: Merge new vocabulary from a JSON file into your saved vocab.
+- `search`: Look up words by **pinyin substring** (tone-insensitive).
+- `study`: Flashcard quiz mode (randomized, shows either English or Chinese first).
+- `add`: Add new words manually from the command line.
 
 ---
 
@@ -60,7 +60,7 @@ Flashcard quiz — shows either:
 
 You hit enter to reveal the answer, and then y/n to say if you were right. When you're done, hit q and it will end the session, and save your stats to a `user_stats.json` file. By default this is in the gitignore so you don't get someone else's stats.
 
-### ✅ Add
+### Add
 
 ```bash
 python3 mandarin.py add "mother" "māma" "妈妈"
