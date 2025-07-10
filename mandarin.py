@@ -5,6 +5,7 @@ import random
 import unicodedata
 
 VOCAB_FILE = 'vocab.json'
+USER_STATS_FILE = 'user_stats.json'
 
 def normalize_pinyin(pinyin):
     """Remove tones to match input like 'ma' to 'mā', 'má', etc."""
@@ -64,6 +65,17 @@ def search(query):
     for word in results:
         print(f"{word['simplified']} ({word['pinyin']}): {word['english']}")
 
+def load_stats():
+    if os.path.exists(USER_STATS_FILE):
+        with open(USER_STATS_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    else:
+        return {}
+
+def save_stats(stats):
+    with open(USER_STATS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
+
 def study():
     if not os.path.exists(VOCAB_FILE):
         print("No vocab file found. Please run `load` first.")
@@ -72,15 +84,58 @@ def study():
     with open(VOCAB_FILE, 'r', encoding='utf-8') as f:
         vocab = json.load(f)
 
+    stats = load_stats()
     random.shuffle(vocab)
+
+    print("Starting study session. Press 'q' at any prompt to quit.\n")
+
     for word in vocab:
         show_chinese = random.choice([True, False])
+        key = f"{word['simplified']}|{word['english']}"
+        if key not in stats:
+            stats[key] = {
+                "guess_chinese": {"right": 0, "wrong": 0},
+                "guess_english": {"right": 0, "wrong": 0}
+            }
+
         if show_chinese:
-            input(f"What does '{word['simplified']}' ({word['pinyin']}) mean? Press Enter to reveal.")
+            ans = input(f"What does '{word['simplified']}' ({word['pinyin']}) mean? Press Enter to reveal or 'q' to quit: ").strip().lower()
+            if ans == 'q':
+                break
             print(f"→ {word['english']}\n")
+            while True:
+                correct = input("Were you correct? (y/n, q to quit): ").strip().lower()
+                if correct == 'q':
+                    break
+                if correct in ('y', 'n'):
+                    if correct == 'y':
+                        stats[key]["guess_english"]["right"] += 1
+                    else:
+                        stats[key]["guess_english"]["wrong"] += 1
+                    break
+            if correct == 'q':
+                break
         else:
-            input(f"What is the Chinese for '{word['english']}'? Press Enter to reveal.")
+            ans = input(f"What is the Chinese for '{word['english']}'? Press Enter to reveal or 'q' to quit: ").strip().lower()
+            if ans == 'q':
+                break
             print(f"→ {word['simplified']} ({word['pinyin']})\n")
+            while True:
+                correct = input("Were you correct? (y/n, q to quit): ").strip().lower()
+                if correct == 'q':
+                    break
+                if correct in ('y', 'n'):
+                    if correct == 'y':
+                        stats[key]["guess_chinese"]["right"] += 1
+                    else:
+                        stats[key]["guess_chinese"]["wrong"] += 1
+                    break
+            if correct == 'q':
+                break
+
+    save_stats(stats)
+    print("Session ended. Stats saved to user_stats.json.")
+
 
 # Command-line interface
 if __name__ == "__main__":

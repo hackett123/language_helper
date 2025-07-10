@@ -22,25 +22,17 @@ python3 mandarin.py [mode] [args...]
 ```
 ### 2. Load Vocabulary
 
-You can load a HelloChinese-style JSON file (like hellochinese.json):
+You can load a JSON file to quickly get started - I've included a starting vocab.json file already, but to add more:
 
 ```bash
-python3 mandarin.py load hellochinese.json
+python3 mandarin.py load my_mandarin_vocab.json
 ```
 
 This will merge the new words into vocab.json.
 
 ## Modes
 
-### ✅ Load
-
-```bash
-python3 mandarin.py load hellochinese.json
-```
-
-Merges words from a new file into your existing vocabulary.
-
-### ✅ Search
+### Search
 
 ```bash
 python3 mandarin.py search guo
@@ -54,7 +46,7 @@ Matches any words where the pinyin contains the substring (tone-insensitive):
 中国 (Zhōngguó): China
 ```
 
-### ✅ Study
+### Study
 
 ```bash
 python3 mandarin.py study
@@ -66,11 +58,12 @@ Flashcard quiz — shows either:
 
     Chinese → you guess English
 
+You hit enter to reveal the answer, and then y/n to say if you were right. When you're done, hit q and it will end the session, and save your stats to a `user_stats.json` file. By default this is in the gitignore so you don't get someone else's stats.
 
 ### ✅ Add
 
 ```bash
-python3 mandarin.py add "mother" "mā" "妈"
+python3 mandarin.py add "mother" "māma" "妈妈"
 ```
 
 Adds a new word to your vocabulary (avoids duplicates).
@@ -80,8 +73,8 @@ Adds a new word to your vocabulary (avoids duplicates).
 ```json
 [
   {
-    "simplified": "妈",
-    "pinyin": "mā",
+    "simplified": "妈妈",
+    "pinyin": "māma",
     "english": "mother"
   },
   ...
